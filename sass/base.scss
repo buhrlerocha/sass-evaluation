@@ -1,0 +1,182 @@
+.nav-wrapper{
+  background-color: white;
+	a {
+       color: $color-principal;
+       font-weight: bold;
+	}
+}
+.brand-logo{
+	display: block;
+}
+.punto{
+	color:$cuadrado-rojo;
+}
+// primera seccion
+.foto-principal{
+	@include foto-fondo(url(../img/1.png), 100%, relative, 375px);
+	
+}
+.opaco-1{
+	@include opaco($opacidad, absolute, 262px, 10px);
+	width: 100%;
+}
+.foto{
+	@include foto-fondo(url(../img/6.png), 100%, relative, 218px);
+	
+}
+
+.foto-primera{
+	@include fotos(url(../img/13.png), no-repeat, cover, relative, 136px, 20px);
+
+}
+.foto-segunda{
+	@include fotos(url(../img/familia.png), no-repeat, cover, relative, 136px, 20px);
+	
+}
+.opacidad{
+	@include opaco($opacidad, absolute, 122px, 10px);
+}
+.cuadrado-rojo{
+	@include cuadrado-rojo($cuadrado-rojo, $float-rojo, relative);
+	padding: 0px 30px;
+	color: $texto-blanco;
+}
+
+.texto-negrita{
+	@include texto-negrita($texto-blanco, 13px, bold);
+}
+.texto-parrafo{
+	@include texto-negrita($texto-blanco, 13px, none);
+}
+.opaco{
+	@include opaco($opacidad, absolute, 62px, 10px);
+	width: 100%;
+}
+.primera{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+// segunda seccion
+.texto-rojo{
+    @include texto-negrita($cuadrado-rojo, 10px, none);	
+}
+.texto-negro{
+	@include texto-negrita($texto-negro, 10px, none);
+}
+.cuatro-texto{
+	margin-bottom: 5px;
+}
+.imagen{
+	@include imagen(85px, no-repeat, cover);
+}
+.estrella{
+	@include estrella(10px, $cuadrado-rojo, 0px, -80px, inline-block);
+	
+}
+.texto-negro2{
+	@include texto-negrita($texto-negro, 15px, none);
+}
+.texto-negro3{
+	@include texto-negrita($color-plomo, 13px, none);
+}
+.imagen1{
+	@include imagen(150px, no-repeat, cover);
+	margin-bottom: 30px;
+	width: 100%;
+}
+.imagen2{
+	@include imagen(200px, no-repeat, cover);
+	width: 290px;
+	margin-bottom: 20px;
+}
+.cuatro-texto2{
+	margin-bottom: 30px;
+}
+.fox{
+	margin-top: -80px;
+}
+
+// CORREGIR CON MIXINS
+.texto-rojo2, .otro {
+	@include texto-negrita($cuadrado-rojo, 15px, bold);
+	
+}
+.texto-negro2, .otro2{
+	@include texto-negrita($color-plomo, 15px, bold);
+	
+}
+
+// CORREGIR CON MIXINS
+
+.accordion{
+	margin-top: -80px;
+}
+.suma{
+	margin-bottom: 10px;
+}
+// footer
+.block{
+	display: block;
+}
+.fin{
+	margin-top: 7px;
+}
+.personas{
+	margin-bottom: 10px;
+}
+.chico{
+	font-size: 10px;
+}
+footer{
+	background-color: $footer;
+}
+.abajo{
+	margin-top: 20px;
+}
+// iconos
+.iconos{
+	@include imagen(85px, no-repeat, cover);
+	margin-top: 20px;
+	border-radius: 5px;
+}
+.cuadro-iconos{
+	@include cuadro-iconos(#F6F4F4, 100%, center, 10px, 90px);
+}
+.video{
+	@include video-bo (290px, 200px, 30px);
+}
+// facebook
+.otro3{
+	font-size: 25px;
+	float: left;
+}
+.likes{
+	width: 50px;
+	float: left;
+}
+.rrr{
+	@include rrr (inline-block, 0px, 10px);
+	
+}
+.hola{
+	width: 100%;
+	height: 60px;
+}
+.texto-chico{
+	@include texto-chico ($color-plomo, 10px, none, 0px, 5px);
+}
+.face{
+	width: 20px;
+}
+.fondo-facebook{
+	@include fondo-facebook ($footer, 50px, 10px, 10px);
+}
+.estrella-ploma{
+	color: $color-plomo;
+	} 
+h5{
+	font-family: 'Voltaire', sans-serif;
+	text-shadow: 0 5px 3px #8B8989;
+	}
+
+

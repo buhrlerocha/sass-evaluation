@@ -1,0 +1,88 @@
+
+
+@mixin opaco ($bi, $br, $bs, $ba) {
+	background-color: $bi;
+	position: $br;
+	margin-top: $bs;
+	padding-left: $ba;
+}
+@mixin fotos ($bi, $br, $bs, $ba, $be, $bo) {
+	background-image: $bi;
+	background-repeat: $br;
+	background-size: $bs;
+	position: $ba;
+	height: $be;
+	margin-top: $bo;
+}
+
+@mixin foto-fondo ($bi, $br, $bs, $ba) {
+	background-image: $bi;
+	width: $br;
+	position: $bs;
+	height: $ba;
+}
+
+@mixin cuadrado-rojo ($bi, $br, $bs) {
+	background-color: $bi;
+	float: $br;
+	position: $bs;
+
+}
+@mixin texto-negrita ($bi, $br, $bs) {
+	color: $bi;
+	font-size: $br;
+	font-weight: $bs;
+}
+@mixin imagen ($bi, $br, $bs) {
+	height: $bi;
+	background-repeat: $br;
+	background-size: $bs;
+}
+@mixin estrella ($bi, $br, $bs, $ba, $be) {
+	font-size: $bi;
+	color: $br;
+	padding: $bs;
+	margin-bottom: $ba;
+	display: $be;
+}
+@mixin texto-negrita ($bi, $br, $bs) {
+	color: $bi;
+	font-size: $br;
+	font-weight: $bs;
+}
+@mixin texto-rojo ($bi, $br, $bs) {
+	color: $bi;
+	font-size: $br;
+	font-weight: $bs;
+}
+@mixin cuadro-iconos ($bi, $br, $bs, $ba, $be) {
+	background-color: $bi;
+	height: $br;
+	text-align: $bs;
+	padding-top: $ba;
+	width: $be;
+}
+
+@mixin video-bo ($bi, $br, $bs) {
+	width: $bi;
+	height: $br;
+	margin-top: $bs;
+}
+@mixin texto-chico ($bi, $br, $bs, $ba, $be) {
+	color: $bi;
+	font-size: $br;
+	font-weight: $bs;
+	margin: $ba;
+	margin-bottom: $be;
+}
+@mixin rrr ($bi, $br, $bs) {
+	display: $bi;
+	margin: $br;
+	margin-left: $bs;
+}
+@mixin fondo-facebook ($bi, $br, $bs, $ba) {
+	background-color: $bi;
+	margin-top: $br;
+	padding-top: $bs;
+	padding-bottom: $ba;
+}
